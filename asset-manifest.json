@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/dante-livingston/static/css/main.ab7136cd.chunk.css",
+    "main.js": "/dante-livingston/static/js/main.3a066717.chunk.js",
+    "main.js.map": "/dante-livingston/static/js/main.3a066717.chunk.js.map",
+    "runtime-main.js": "/dante-livingston/static/js/runtime-main.18f56ca4.js",
+    "runtime-main.js.map": "/dante-livingston/static/js/runtime-main.18f56ca4.js.map",
+    "static/js/2.62e4cb24.chunk.js": "/dante-livingston/static/js/2.62e4cb24.chunk.js",
+    "static/js/2.62e4cb24.chunk.js.map": "/dante-livingston/static/js/2.62e4cb24.chunk.js.map",
+    "static/js/3.52aba070.chunk.js": "/dante-livingston/static/js/3.52aba070.chunk.js",
+    "static/js/3.52aba070.chunk.js.map": "/dante-livingston/static/js/3.52aba070.chunk.js.map",
+    "index.html": "/dante-livingston/index.html",
+    "static/css/main.ab7136cd.chunk.css.map": "/dante-livingston/static/css/main.ab7136cd.chunk.css.map",
+    "static/js/2.62e4cb24.chunk.js.LICENSE.txt": "/dante-livingston/static/js/2.62e4cb24.chunk.js.LICENSE.txt",
+    "static/media/logo.103b5fa1.svg": "/dante-livingston/static/media/logo.103b5fa1.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.18f56ca4.js",
+    "static/js/2.62e4cb24.chunk.js",
+    "static/css/main.ab7136cd.chunk.css",
+    "static/js/main.3a066717.chunk.js"
+  ]
+}
