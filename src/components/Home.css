@@ -1,0 +1,4 @@
+.thumbnail:hover {
+  filter: grayscale(100%);
+  cursor: pointer;
+}
