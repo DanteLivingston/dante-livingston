@@ -1,39 +1,45 @@
-import { Link } from 'react-router-dom'
-import './Home.css'
-import images from './images.json'
-import PageTitle from './PageTitle'
-import strings from './strings.json'
+import { Link } from 'react-router-dom';
+import './Home.css';
+import projects from '../config/projects';
+import PageTitle from './PageTitle';
+import strings from '../config/strings';
 
 function Art({ type }) {
   return (
     <>
-      <PageTitle>{strings.traditionalArt}</PageTitle>
+      <PageTitle>
+        {projects.type === 'traditional'
+          ? strings.traditionalArt
+          : strings.digitalArt}
+      </PageTitle>
       <div className="row">
-        {images
-          .filter((image) => image.type === type)
-          .map((image) => (
-            <div className="col-sm-4 mb-4 text-center" key={image.id}>
-              <Link to={`/art-details/${image.id}`}>
-                <img
-                  alt={image.title}
-                  title={image.title}
-                  src={image.image}
-                  className="w-100 rounded thumbnail"
-                  style={{
-                    objectFit: 'cover',
-                    height: '200px',
-                    '&:hover': {
-                      filter: 'grayscale(100%)',
-                    },
-                  }}
-                />
-              </Link>
-              {image.title}
-            </div>
-          ))}
+        {projects
+          .filter((projects) => projects.type === type)
+          .map((project) => {
+            return (
+              <div className="col-sm-4 mb-4 text-center" key={project.slug}>
+                <Link to={`/art-details/${project.slug}`}>
+                  <img
+                    alt={project.title}
+                    title={project.title}
+                    src={project.images[0].url}
+                    className="w-100 rounded thumbnail"
+                    style={{
+                      objectFit: 'cover',
+                      height: '200px',
+                      '&:hover': {
+                        filter: 'grayscale(100%)',
+                      },
+                    }}
+                  />
+                </Link>
+                {`${project.title} (${project.images.length})`}
+              </div>
+            );
+          })}
       </div>
     </>
-  )
+  );
 }
 
-export default Art
+export default Art;

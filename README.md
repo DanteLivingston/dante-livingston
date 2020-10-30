@@ -1,3 +1,50 @@
+# Dante Livingston Portfolio Site
+
+## Install (Only do once)
+
+Open terminal and run
+
+`npm install`
+
+## Stop
+
+In same terminal type:
+
+`Ctrl+C Ctrl+C`
+
+---
+
+## Config
+
+Everything for configuring this is within the `src/config` directory
+
+### strings.js - This file contains any text within the site, except for project specific information.
+
+### projects - This directory is used to create new projects
+
+### Creating a new projects
+
+1. Copy and paste the src/projects/template folder and change the folder name using `snake-case`.
+2. Update config.js
+
+- slug - This is the URL used for the details page and must be unique from other projects.
+- title - Title of the project
+- type - traditional or digital
+- images
+
+  - Add images into the image folder and give them names using `snake-case`.
+  - Import the images into the config.js and assign to respective urls.
+  - Add a title and description (optional).
+
+3. Update description.md - Copy and paste your description and manipulate using markdown syntax. [Cheat Sheet](https://www.markdownguide.org/cheat-sheet/)
+4. Open src/config/index.js and import your project file like the others.
+
+> Tips: Order will be based on how they are organized
+
+---
+
+Original Instructions
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

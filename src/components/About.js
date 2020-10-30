@@ -1,7 +1,6 @@
-import { SocialIcon } from 'react-social-icons'
-import DummyImage from './DummyImage'
-import PageTitle from './PageTitle'
-import strings from './strings.json'
+import { SocialIcon } from 'react-social-icons';
+import PageTitle from './PageTitle';
+import strings from '../config/strings';
 
 function About() {
   return (
@@ -9,7 +8,12 @@ function About() {
       <PageTitle>{strings.about}</PageTitle>
       <div className="row">
         <div className="col-4">
-          <DummyImage height={300} />
+          <img
+            alt="Dante Livingston"
+            className="w-100"
+            src="http://dummyimage.com/400x400.jpg/cc00dd/ffffff"
+            height="300"
+          />
         </div>
         <div className="col-8">{strings.aboutStatement}</div>
       </div>
@@ -51,7 +55,7 @@ function About() {
         <div className="col-sm-2"></div>
       </div>
     </>
-  )
+  );
 }
 
-export default About
+export default About;
